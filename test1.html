@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBHTrommur</title>
+    <link rel="stylesheet" href="test1.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-slides">
+            <div class="slide active">
+                <img src="img/lessontest1.png" alt="Drum lesson 1">
+            </div>
+            <div class="slide">
+                <img src="img/lessontest2.png" alt="Drum lesson 2">
+            </div>
+            <div class="slide">
+                <img src="img/lessontest3.png" alt="Drum lesson 3">
+            </div>
+        </div>
+        <div class="banner-overlay">
+            <img src="img/hbhtest15.svg" alt="Site Logo" class="site-logo">
+        </div>
+    </div>
+
+    <nav class="navbar">
+        
+        <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle navigation">
+            &#9776;
+        </button>
+        <ul class="navbar-list" id="navbarList">
+            <li><a href="#afhvvid" class="navbar-link">Af hverju við?</a></li>
+            <li><a href="#vikuplan" class="navbar-link">Bóka tíma</a></li>
+            <li><a href="#store" class="navbar-link">Búnaður</a></li>
+            <li><a href="#efni" class="navbar-link">Efni</a></li>
+        </ul>
+        
+    </nav>
+
+    <main class="container">
+        <section class="features" id="afhvvid">
+            <h2>Af hverju við?</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>Einstaklingsmiðað Nám</h3>
+                    <p>Hvort sem þú er byrjandi, eða atvinnumaður er alltaf hægt að læra meira, og betur. Nemandi stýrir náminu til að læra lög sem þau hafa áhuga á yfir allt annað. Það eru engin próf svo hver aðili tekur námið á sínum eigin tíma.</p>
+                </div>
+                <div class="feature">
+                    <h3>Trommutímar á þínu þægindasvæði</h3>
+                    <p>Hvert trommusett á að aðlagast spilandanum. Þess vegna er þæginlegast að spila í þinni aðstöðu. Hvort sem það er í æfingarými með hljómsveit, eða í þínu eigin heimili.</p>
+                </div>
+                <div class="feature">
+                    <h3>Aðlaganlegir trommutímar</h3>
+                    <p>Fyrirvari er ekki vandamál. ef tími er laus þarf bara upp að klukkutíma fyrirvara áður en kennari kemst til þín. Fastir tímar eru heldur ekki neitt vandamál, heldur er það hvatið til.</p>
+                </div>
+                <div class="feature">
+                    <h3>Staðgenglar fyrir æfingar eða tónleika</h3>
+                    <p>Nemendur í tónskólum eða hljómsveitum geta ekki alltaf mætt á æfingar eða tónleika. hvort sem það er vegna veikinda eða áætlunarátökum. Í stað þess að þvinga sér til að mæta, er hægt að nota kennara sem staðgengla til að taka við í stutta stund. Þetta leyfir öðrum aðilum í hljómsveitum að halda áfram án seinkun. aukalega ef einhverjar breytingar krefjast, getur nemandi lært þær í næsta trommutímanum sínum.</p>
+                </div>
+                <div class="feature">
+                    <h3>Tónfræði og mynstursþekking</h3>
+                    <p>Allir nemendur sem þarfnast þess fá góðar kennslur í tónfræði og hvernig á að lesa nótur. Öll tónfræði er kennd eftir því sem nemandi vill læra. Aukalega er sett stærri áheyrsla á mynstursþekkingu í tónlist til að leyfa nemendum að spuna eins mikið og hægt er til að líða vel fyrir aftan trommurnar. Öllum nemendum er líka kennt að halda hraða og að telja inn sjálfstætt.</p>
+                </div>
+                <div class="feature">
+                    <h3>Aðstoð við trommusetts uppsetninga</h3>
+                    <p>Hvert trommusett þarf að vera rétt fyrir hvern tónlistarman. Þess vegna gefum við meðmæli um hvað ætti að kaupa, stórt eða lítið. Aukalega hjálpum við nemendum að smiða og stilla trommur og aukahluti til þess að halda upp á tækni og þægindi. Aukalega er hægt að fá trommukennara til að koma með búnað hvert sem er, beint frá búðinni.</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <main class="container">
+            
+            <section class="features" id="vikuplan">
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label for="name">Nafn *</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Heimilisfang *</label>
+                    <input type="text" id="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="pronouns">Fornöfn *</label>
+                    <select id="pronouns" required>
+                        <option value="">Veldu Fornafn</option>
+                        <option value="he/him">Hann</option>
+                        <option value="she/her">Hún</option>
+                        <option value="they/them">Þeir</option>
+                        <option value="other">Annað</option>
+                    </select>
+                
+                </div>
+                <div id="otherPronouns" class="form-group" style="display: none;">
+                    <label for="customPronouns">Fornafnið þitt *</label>
+                    <input type="text" id="customPronouns">
+                </div>
+            </form>
+            
+            <button id="scheduleButton" class="schedule-button">Vikuplan</button>
+            
+            <div id="scheduleOverlay" class="schedule-content">
+                <div class="schedule-section">
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Mánudagur</th>
+                                <th>Þriðjudagur</th>
+                                <th>Miðvikudagur</th>
+                                <th>Fimtudagur</th>
+                                <th>Föstudagur</th>
+                                <th>Laugardagur</th>
+                                <th>Sunnudagur</th>
+                            </tr>
+                        </thead>
+                        <tbody id="scheduleBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            </section>
+
+            <section class="recommended-gear" id="store">
+                <div class="container">
+                    <h2>Búnaður</h2>
+                    <div class="gear-grid">
+                        
+                        <div class="gear-item">
+                            <div class="slideshow" id="drumsticks-slideshow">
+                                <div class="slides">
+                                    <a href="https://www.tonastodin.is/fylgihlutir/slagverk-og-trommur/kjudar-og-sleglar/kjudar/vic-firth-trommukjudar-x5a/"><img src="img\kjudarx5e.png" alt="Kjudar"></a>
+                                    <a href="https://www.tonastodin.is/fylgihlutir/slagverk-og-trommur/kjudar-og-sleglar/kjudar/vic-firth-trommuburstar-rute505/"><img src="img\bjudar.png" alt="Bjudar"></a>
+                                    <a href="https://www.tonastodin.is/fylgihlutir/slagverk-og-trommur/kjudar-og-sleglar/burstar/meinl-brush-fixed-nylon/"><img src="img\brush.png" alt="Brush"></a>
+                                    <a href="https://www.tonastodin.is/fylgihlutir/slagverk-og-trommur/kjudar-og-sleglar/sleglar/vic-firth-american-custom-timpani-staccato-mallets/"><img src="img\mallet.png" alt="Mallet"></a>
+                                </div>
+                                <button class="prev">&#10094;</button>
+                                <button class="next">&#10095;</button>
+                                <div class="dots"></div>
+                            </div>
+                            <h3>Kjuðar</h3>
+                        </div>
+            
+                        
+                        <div class="gear-item">
+                            <div class="slideshow" id="pads-slideshow">
+                                <div class="slides">
+                                    <a href="https://www.tonastodin.is/fylgihlutir/slagverk-og-trommur/aefingaplattar-og-demparar/zildjian-reflexx-conditioning-pad-6/"><img src="img\normalpad.png" alt="NormPad"></a>
+                                    <a href="https://www.tonastodin.is/fylgihlutir/slagverk-og-trommur/hardware/sc-ppp-pocket-practice-pad/"><img src="img\kneepad.png" alt="KneePad"></a>
+                                    <a href="https://www.tonastodin.is/fylgihlutir/slagverk-og-trommur/aefingaplattar-og-demparar/gibraltar-gbdp-practise-pad/"><img src="img\pedalpad.png" alt="BasePad"></a>
+                                </div>
+                                <button class="prev">&#10094;</button>
+                                <button class="next">&#10095;</button>
+                                <div class="dots"></div>
+                            </div>
+                            <h3>Plattar</h3>
+                        </div>
+            
+                        
+                        <div class="gear-item">
+                            <div class="slideshow" id="drums-slideshow">
+                                <div class="slides">
+                                    <a href="https://www.tonastodin.is/fylgihlutir/slagverk-og-trommur/annad/dbud-hi-fi-adjustable-earplugs/"><img src="img\earplug.png" alt="Earplugs"></a>
+                                    <a href="https://www.tonastodin.is/fylgihlutir/slagverk-og-trommur/hardware/gibraltar-sc-sh-stick-holder/"><img src="img\stickholder.png" alt="Stickholder"></a>
+                                    <a href="https://www.tonastodin.is/hljodfaeri/trommur-og-slagverk/slagverk/meinl-medium-timbales-kuabjalla-6-14-krom/"><img src="img\cowbell.png" alt="Cowbell"></a>
+                                    <a href="https://www.tonastodin.is/hljodfaeri/trommur-og-slagverk/slagverk/meinl-mountable-tamborina-brass-jingles/"><img src="img\tamb1.png" alt="Tamb1"></a>
+                                    <a href="https://www.tonastodin.is/hljodfaeri/trommur-og-slagverk/slagverk/meinl-hi-hat-tamburina-brass-1-rod-svort/"><img src="img\hhtamb.png" alt="hhtamb"></a>
+                                    <a href="https://www.tonastodin.is/hljodfaeri/trommur-og-slagverk/slagverk-fyrir-born/nino-bongotromma-raud-6-12-7-12/"><img src="img\bongo2.png" alt="Bongo"></a>
+                                    <a href="https://www.tonastodin.is/fylgihlutir/stillitaeki-og-taktmaelar/taktmaelir-plast-hnotulitur/"><img src="img\metronome.png" alt="Metronome"></a>
+                                </div>
+                                <button class="prev">&#10094;</button>
+                                <button class="next">&#10095;</button>
+                                <div class="dots"></div>
+                            </div>
+                            <h3>Perk</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="student-resources" id="efni">
+                <div class="container">
+                    <h2>Efni</h2>
+                    <div class="resources-grid">
+                        
+                        <div class="resource-box">
+                            <h3>Tækni</h3>
+                            <ul>
+                                <li><a href="https://www.drumeo.com/beat/rudiments/rolls/" target="_blank">Þyrl (double stroke)</a></li>
+                                <li><a href="https://www.drumeo.com/beat/rudiments/paradiddles/" target="_blank">Paradillur</a></li>
+                                <li><a href="https://www.drumeo.com/beat/rudiments/flams/" target="_blank">Flam</a></li>
+                                <li><a href="https://www.drumeo.com/beat/rudiments/drags/" target="_blank">Drag</a></li>
+                                <li><a href="https://www.drumeo.com/beat/technique/hand-technique/" target="_blank">Handar-tækni</a></li>
+                                <li><a href="https://www.drumeo.com/beat/technique/foot-technique/" target="_blank">Fótar-tækni</a></li>
+                                <li><a href="https://www.drumeo.com/beat/beats-and-fills/drum-beats/" target="_blank">Trommusetts taktar</a></li>
+                                <li><a href="https://www.drumeo.com/beat/beats-and-fills/drum-fills/" target="_blank">Fill</a></li>
+                                <li><a href="https://www.drumeo.com/beat/technique/health/" target="_blank">Heilsa</a></li>
+                            </ul>
+                        </div>
+            
+                        
+                        <div class="resource-box">
+                            <h3>Nótur</h3>
+                            <ul>
+                                <li><a href="https://www.tonastodin.is/notur/slagverktrommur/hoggmyndir-fyrir-sneriltrommu/" target="_blank">Höggmyndir fyrir sneriltrommu</a></li>
+                                <li><a href="https://www.tonastodin.is/notur/slagverktrommur/sneriltromman-1bok/" target="_blank">Sneriltromman 1</a></li>
+                                <li><a href="https://www.tonastodin.is/notur/slagverktrommur/sneriltromman-2bok/" target="_blank">Sneriltromman 2</a></li>
+                                <li><a href="https://www.tonastodin.is/notur/slagverktrommur/hringir-innan-hringja/" target="_blank">Hringir innan hringja</a></li>
+                                <li><a href="https://www.tonastodin.is/notur/slagverktrommur/alfred-s-beginning-drumset-method-med-nidurhali/" target="_blank">Alfreds Beginning Drumset Method</a></li>
+                                <li><a href="https://www.tonastodin.is/notur/slagverktrommur/kennslubok-i-trommuleik/" target="_blank">Kennslubókin í trommuleik</a></li>
+                                <li><a href="https://www.tonastodin.is/notur/slagverktrommur/hljodritadur-undirleikur-fyrir-trommusett/" target="_blank">Hljóðritaður undirleikur fyrir trommusett</a></li>
+                                <li><a href="https://www.tonastodin.is/notur/slagverktrommur/grunnnam-i-trommusettsleik/" target="_blank">Grunnám í trommusettsleik</a></li>
+                                <li><a href="https://www.tonastodin.is/notur/slagverktrommur/midnam-i-trommusettsleik/" target="_blank">Miðnám í trommusettsleik</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+            
+                    
+                    <div class="song-player">
+                        <h3>Æfingar-lög</h3>
+                        
+                        <div class="main-player">
+                            <audio id="mainAudioPlayer" controls>
+                                <source id="audioSource" src="" type="audio/mp3">
+                                Prófaðu nýjan browser til að spila tónlist
+                            </audio>
+                        </div>
+                    
+                        
+                        <div class="track-categories">
+                            <button class="category-button" data-category="consistency">Samræmi</button>
+                            <button class="category-button" data-category="fills">Fills</button>
+                            <button class="category-button" data-category="pocket">Pocket</button>
+                            <button class="category-button" data-category="improv">Improv</button>
+                            <button class="category-button" data-category="counting">Talning</button>
+                        </div>
+                    
+                        
+                        <div id="tracksContainer"></div>
+                    </div>
+                    
+                </div>
+            </section>
+            
+            
+    </main>
+
+    <script src="test1.js"></script>
+</body>
+</html>
